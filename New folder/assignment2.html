@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="themify-icons.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .header {
+        display:flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: #000;
+        box-shadow: 0 2px 5px rgb(0 0 0/16%),0 2px 5px rgb(0 0 0/12%);
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header img {
+        width: 150px;
+    }
+    .left {
+        align-items: center;
+    }
+    .header a {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 20px 15px;
+    }
+    .header a:hover {
+        color:#000;
+        background-color: #ccc;
+    }
+    .left,.right {
+        display: flex;
+    }
+    .right {
+        float: right;
+    }
+    @media (max-width:580px){
+        .right {
+            display: none;
+        }
+    }
+    .image {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        overflow: hidden;
+        max-height: 665px;
+    }
+    .image img {
+        width: 100%;
+    }
+    i {
+        color:#fff
+    }
+    main.contain {
+        width: 100%;
+        background-color:#0e0e0e ;
+        position: relative;
+        opacity: 0.999;
+    }
+    main.contain>h1 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+    @media (min-width:768px){
+        .contain {
+            padding: 64px 0;
+        }
+    }
+    .news-wrap {
+       background-color: #0e0e0e;
+       position: relative;
+       display: flex;
+       width: 100%;
+       z-index: 2;
+       flex-direction: row;
+    }
+    @media (max-width:1000px){
+        .news-wrap{
+            flex-direction: column;
+        }
+        .news-left,.news-right {
+            width: 100%!important;
+        }
+        .foot {
+            flex-direction: column!important;
+        }
+        .logoname,.foot-left,.foot-right {
+            width: 100%!important;
+            justify-content: center!important;
+        }
+
+    }
+    .news-left {
+        width: 50%;
+        color: #f3f4f4;
+        text-align: center;
+        padding:10px 25px;
+    }
+    .news-left a {
+        text-decoration: none;
+        color: #f3f4f4;
+        font-size: 20px;
+    }
+    .news-left a p {
+        letter-spacing: 1.5px;
+    }
+    .news-right {
+        width: 50%;
+        color: #f3f4f4;
+    }
+    .news-left img {
+        max-width:500px;
+    }
+    .news-right a{
+        display: flex;
+        padding: 24px 10px;
+        border-bottom:1px solid #bac5c6 ;
+        text-decoration: none;
+        align-items: center;
+        font-size: 25px;
+        color: #f3f4f4; 
+    }
+    .news-right a h5 {
+        padding-left: 10px;
+    }
+    .news-right a h5:hover,.news-left a h1:hover {
+        text-decoration: underline;
+    }
+    .news-right img {
+        float: left;
+        max-width: 100px;
+    }
+    footer {
+        background-color: #0e0e0e;
+        color: #8996a0;
+        padding-bottom: 64px;
+        padding-top: 64px;
+        position: relative;
+        z-index: 2;
+    }
+    .foot {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .logoname {
+        width: 33.33%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .logoname img {
+        max-width: 150px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .foot-right {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .foot-left {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .foot-right a {
+        padding:0 10px;
+        text-decoration: none;
+        color: #8996a0;
+        font-size: 20px;
+    }
+    .student {
+        background-color: #f3f4f4;
+        padding:16px 0;
+        position: relative;
+        text-align: center;
+    }
+    .team {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .team a {
+        display: flex;
+        width: 300px;
+        text-decoration: none;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .team a h5 {
+        color: #0e0e0e;
+        font-size: 30px;
+    }
+    .team a img {
+        width: 200px;
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="left">
+        <img src="https://1000logos.net/wp-content/uploads/2018/08/Hogwarts-Logo.jpg" alt="">
+        <a href="#" >Home</a>
+        <a href="news.html" >News</a>
+        <a href="about.html">About</a>
+        </div>
+        <div class="right">
+        <a href="#" >Log in</a>
+        <a href="signup.html" >Sign up</a>
+        </div>
+    </div> 
+    <main class="home">
+        <div class="image">
+            <img src="https://media-exp1.licdn.com/dms/image/C4E1BAQEYAZg9z0GuGQ/company-background_10000/0/1552410816369?e=2147483647&v=beta&t=wDB0KugFIs7EinqU0gZxQfCMpfYnvCAiu5Zm9SNtvYk" alt="">
+        </div>
+    </main>
+    <main class="contain">
+        <h1>News</h1>
+        <div class="news-wrap">
+            <div class="news-left">
+                <a href="">
+                    <img src="https://pbs.twimg.com/media/E8ktxTDVIAMNWum?format=jpg&name=small" alt="">
+                    <h1>Harry Potter và Hòn đá Phù thủy</h1>
+                    <p>Chúa tể Voldemort, đã ám sát vợ chồng James Potter và Lily Potter (Bố mẹ của Harry Potter) nhưng biến mất bí ẩn sau khi không giết được con trai nhỏ của họ là Harry.Giáo sư Albus Dumbledore đã gửi Harry đến cho gia đình người Muggle gắt gỏng và lạnh lùng, Vernon và Petunia Dursley. Trong mười năm sống Harry liên tục bị vợ chồng Vernon lạm dụng cũng như bị đứa con trai hư hỏng của họ là Dudley bắt nạt. Cuộc đời của Harry thay đổi vào đêm sinh nhật thứ 11 khi cậu nhận được thư nhập học tại trường Ma thuật và Pháp thuật Hogwarts...</p>
+                </a>
+            </div>
+            <div class="news-right">
+                <a href="">
+                    <img src="http://starlight.vn/Areas/Admin/Content/Fileuploads/images/POSTER/hp-%20can-phong-bi-mat.jpg" alt="">
+                    <h5>Harry Potter và Phòng chứa Bí mật</h5>
+                </a>
+                <a href="">
+                    <img src="https://media.viezone.vn/prod/2021/11/20/image_e2e862a988.png" alt="">
+                    <h5>Harry Potter và tên tù nhân ngục Azkaban</h5>
+                </a>
+                <a href="">
+                    <img src="https://i.rada.vn/data/image/2019/07/13/mini-Harry-Potter-and-the-Goblet-of-Fire-11.jpg" alt="">
+                    <h5>Harry Potter và Chiếc cốc lửa</h5>
+                </a>
+                <a href="">
+                    <img src="https://i0.wp.com/media.discordapp.net/attachments/924155580124385280/959818691208433744/16212.jpg?w=300" alt="">
+                    <h5>Harry Potter và Hội Phượng Hoàng</h5>
+                </a>
+                <a href="">
+                    <img src="https://ophimhay.com/file/banner-phim/harry-potter-va-hoang-tu-lai-harry-potter-6-harry-potter-and-the-half-blood-prince.jpg" alt="">
+                    <h5>Harry Potter và Hoàng tử lai</h5>
+                </a>
+            </div>
+        </div>
+    </main>
+    <main class="student">
+        <h1>Team</h1>
+        <div class="team">
+            <a href="team1.html">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/98/Gryffindor.jpg/150px-Gryffindor.jpg" alt="">
+                <h5>Gryffindor</h5>
+            </a>
+            <a href="team2.html">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/e/e4/Hufflepuff.jpg/150px-Hufflepuff.jpg" alt="">
+                <h5>Hufflepuff</h5>
+            </a>
+            <a href="team3.html">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/5/55/Ravenclaw.jpg/156px-Ravenclaw.jpg" alt="">
+                <h5>Ravenclaw</h5>
+            </a>
+            <a href="team4.html">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/6/6e/Slytherin.jpg/150px-Slytherin.jpg" alt="">
+                <h5>Slytherin</h5>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="foot-left">
+            <p style="font-size:20px;">© 2022 Hogwarts School of Witchcraft and Wizardry</p>
+            </div>
+            <div class="logoname">
+                <h2 style="font-size:50px">Hogwarts</h2>
+                <h5 style="font-size:30px">School</h5>
+                <img src="https://1000logos.net/wp-content/uploads/2018/08/Hogwarts-Logo.jpg" alt="">
+            </div>
+            <div class="foot-right">
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">Youtube</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

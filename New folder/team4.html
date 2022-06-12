@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .header {
+        display:flex;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        background-color: #000;
+        box-shadow: 0 2px 5px rgb(0 0 0/16%),0 2px 5px rgb(0 0 0/12%);
+        align-items: center;
+        justify-content: center;
+    }
+    .header img {
+        width: 150px;
+        height: auto;
+    }
+    .contant {
+        width: 100%;
+    }
+    .head,.home,.members {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-around;
+}
+    img {
+        height: 450px;
+    }
+    .head div,.home div,.members div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+        font-size: 25px;
+        color: #000;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    h1 {
+        text-align: center;
+    }
+    @media (max-width:1000px){
+        .foot {
+            flex-direction: column!important;
+        }
+        .logoname,.foot-left,.foot-right {
+            width: 100%!important;
+            justify-content: center!important;
+        }
+
+    }
+    footer {
+        background-color: #0e0e0e;
+        color: #8996a0;
+        padding-bottom: 64px;
+        padding-top: 64px;
+        position: relative;
+        z-index: 2;
+    }
+    .foot {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .logoname {
+        width: 33.33%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .logoname img {
+        max-width: 150px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .foot-right {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .foot-left {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .foot-right a {
+        padding:0 10px;
+        text-decoration: none;
+        color: #8996a0;
+        font-size: 20px;
+    }
+    .logoname img {
+        height: auto;
+    }
+    body {
+        background-color: rgb(39, 93, 43);
+    }
+</style>
+<body>
+    <div class="header">
+        <img src="https://static.wikia.nocookie.net/harrypotter/images/0/00/Slytherin_ClearBG.png/revision/latest/scale-to-width-down/350?cb=20161020182557" alt="">
+    </div>
+    <div class="contant">
+    <h1 >Head</h1>
+    <div class="head">
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/a/a1/Horace_Slughorn_%28HBP_promo%29_1-1.jpg/revision/latest/scale-to-width-down/350?cb=20100706114608" alt="">
+            <a href="#">Horace Eugene Flaccus Slughorn</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/a/a3/Severus_Snape.jpg/revision/latest/scale-to-width-down/335?cb=20150307193047" alt="">
+            <a href="">Severus Snape</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/6/60/PM_SalazarSlytherin_Founders.jpg/revision/latest/scale-to-width-down/297?cb=20180611201037" alt="">
+            <a href="">Salazar Slytherin</a>
+        </div>
+    </div>
+    <h1 >Home</h1>
+    <div class="home">
+    <div>
+        <h2>Ghost</h2>
+        <img src="https://static.wikia.nocookie.net/harrypotter/images/5/55/Bloody_Baron.jpg/revision/latest/scale-to-width-down/292?cb=20100408172210" alt="">
+        <a href="">The Bloody Baron</a>
+    </div>
+    <div>
+        <h2>Home</h2>
+        <img src="https://static.wikia.nocookie.net/harrypotter/images/c/c7/Slytherin_common_room.jpg/revision/latest/scale-to-width-down/200?cb=20161218225111" alt="">
+        <a href="">Slytherin Dungeon</a>
+    </div>
+</div>
+    <h1 >Members</h1>
+    <div class="members">
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/8/8a/Albus_Potter_%28HPCC%29.png/revision/latest/scale-to-width-down/350?cb=20161122213127" alt="">
+            <a href="">Albus Severus Potter</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/6/68/Dolores_Umbridge_Deathly_Hallows_promotional_image.jpg/revision/latest/scale-to-width-down/350?cb=20101127041001" alt="">
+            <a href="">Dolores Jane Umbridge</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/a/a1/Horace_Slughorn_%28HBP_promo%29_1-1.jpg/revision/latest/scale-to-width-down/350?cb=20100706114608" alt="">
+            <a href="">Horace Eugene Flaccus Slughorn</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/8/85/Leta_Profile.png/revision/latest/scale-to-width-down/332?cb=20181229010039" alt="">
+            <a href="">Leta Lestrange</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/a/aa/Voldemort_Headshot_DHP1.png/revision/latest/scale-to-width-down/350?cb=20161203031453" alt="">
+            <a href="">Tom Marvolo Riddle</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/e/ee/GauntFamily.jpeg/revision/latest/scale-to-width-down/350?cb=20180101110919" alt="">
+            <a href="">Gaunt family</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/1/1e/RosierFB.jpg/revision/latest/scale-to-width-down/279?cb=20180129184415" alt="">
+            <a href="">Rosier family</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/c/c1/Carrow_family.png/revision/latest/scale-to-width-down/350?cb=20210907034650" alt="">
+            <a href="">Carrow family</a>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="foot-left">
+            <p style="font-size:20px;">© 2022 Hogwarts School of Witchcraft and Wizardry</p>
+            </div>
+            <div class="logoname">
+                <h2 style="font-size:50px">Hogwarts</h2>
+                <h5 style="font-size:30px">School</h5>
+                <img src="https://1000logos.net/wp-content/uploads/2018/08/Hogwarts-Logo.jpg" alt="">
+            </div>
+            <div class="foot-right">
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">Youtube</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

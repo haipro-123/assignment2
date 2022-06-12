@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .but {
+        color: red;
+        box-shadow: 2px 2px 10px blue inset;
+        width: 70px;
+        height: 30px;
+    }
+    .but1 {
+        color: gray;
+        box-shadow: 2px 2px 10px gray inset;
+        width: 70px;
+        height: 30px;
+    }
+    label,p {
+        font-weight: bold;
+    }
+</style>
+<body>
+    <form action="" method="">
+        <label for="name">User Name :</label> <br>
+        <input type="text" id="name" name="name" value="abc"> <br>
+        <label for="pass">Password :</label> <br>
+        <input type="password" id="pass" name="pass" value="123456"> <br>
+        <input type="checkbox" id="rem" name="rem"> 
+        <label for="rem">Remember me?</label> <hr>
+        <input type="submit" value="Login">
+    </form>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="name">Họ và tên</label> <br>
+        <input type="text" id="name" name="name"> <br>
+        <p>Giới tính :</p>
+        <input name="sex" type="radio" id="sex" value="Nam">
+        <label for="sex">Nam</label>
+        <input name="sex" type="radio" id="sex" value="Nữ">
+        <label for="sex">Nữ</label>
+        <p>Hình ảnh :</p> 
+        <input type="file" value="Choose File"> 
+        <br>
+        <label for="nationality">Quốc tịch :</label> <br>
+        <select name="nation" id="nationality">
+            <option value="United States">United States</option>
+            <option value="Viet Nam">Viet Nam</option>
+        </select>
+        <p>Sở thích :</p>
+        <input type="checkbox" id="like" value="sport">
+        <label for="like">Thể thao</label>
+        <input type="checkbox" id="like" value="visit">
+        <label for="like">Du lịch</label>
+        <input type="checkbox" id="like" value="music">
+        <label for="like">Âm nhạc</label>
+        <input type="checkbox" id="like" value="food">
+        <label for="like">Ẩm thực</label> <br>
+        <label for="note">ghi chú:</label> <br>
+        <textarea name="note" id="note" cols="30" rows="10"></textarea> <hr>
+        <input type="submit" name="" id="" value="Đăng ký">
+        <input type="submit" name="" id="" value="Nhập lại">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .header {
+        display:flex;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        background-color: #000;
+        box-shadow: 0 2px 5px rgb(0 0 0/16%),0 2px 5px rgb(0 0 0/12%);
+        align-items: center;
+        justify-content: center;
+    }
+    .header img {
+        width: 150px;
+        height: auto;
+    }
+    .contant {
+        width: 100%;
+    }
+    .head,.home,.members {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-around;
+}
+    img {
+        height: 450px;
+    }
+    .head div,.home div,.members div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+        font-size: 25px;
+        color: #000;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    h1 {
+        text-align: center;
+    }
+    @media (max-width:1000px){
+        .foot {
+            flex-direction: column!important;
+        }
+        .logoname,.foot-left,.foot-right {
+            width: 100%!important;
+            justify-content: center!important;
+        }
+
+    }
+    footer {
+        background-color: #0e0e0e;
+        color: #8996a0;
+        padding-bottom: 64px;
+        padding-top: 64px;
+        position: relative;
+        z-index: 2;
+    }
+    .foot {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .logoname {
+        width: 33.33%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .logoname img {
+        max-width: 150px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .foot-right {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .foot-left {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .foot-right a {
+        padding:0 10px;
+        text-decoration: none;
+        color: #8996a0;
+        font-size: 20px;
+    }
+    .logoname img {
+        height: auto;
+    }
+    body {
+        background-color: rgb(255,255,51);
+    }
+</style>
+<body>
+    <div class="header">
+        <img src="https://static.wikia.nocookie.net/harrypotter/images/0/06/Hufflepuff_ClearBG.png/revision/latest/scale-to-width-down/350?cb=20161020182518" alt="">
+    </div>
+    <div class="contant">
+    <h1 >Head</h1>
+    <div class="head">
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/6/6e/Pomona_Sprout_DHF2.jpg/revision/latest/scale-to-width-down/337?cb=20170730031333" alt="">
+            <a href="#">Pomona Sprout</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/d/d6/PM_HelgaHufflepuff_Founders.jpg/revision/latest/scale-to-width-down/283?cb=20180611201502" alt="">
+            <a href="">Helga Hufflepuff</a>
+        </div>
+    </div>
+    <h1 >Home</h1>
+    <div class="home">
+    <div>
+        <h2>Ghost</h2>
+        <img src="https://static.wikia.nocookie.net/harrypotter/images/e/ea/Fat_Friar_Profile.png/revision/latest/scale-to-width-down/340?cb=20160409230657" alt="">
+        <a href="">The Fat Friar</a>
+    </div>
+    <div>
+        <h2>Home</h2>
+        <img src="https://static.wikia.nocookie.net/harrypotter/images/5/53/Hufflepuff_common_room.jpg/revision/latest/scale-to-width-down/350?cb=20160809222841" alt="">
+        <a href="">Hufflepuff Basement</a>
+    </div>
+</div>
+    <h1 >Members</h1>
+    <div class="members">
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/4/41/BridgetWenlock.png/revision/latest?cb=20130317224539" alt="">
+            <a href="">Bridget Wenlock</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/9/90/Cedric_Diggory_Profile.png/revision/latest/scale-to-width-down/350?cb=20161123045136" alt="">
+            <a href="">Cedric Diggory</a>
+        </div>
+        <div>
+            <img src="https://static.wikia.nocookie.net/harrypotter/images/d/de/Ernie_GOF.jpg/revision/latest/scale-to-width-down/348?cb=20160720043852" alt="">
+            <a href="">Ernest Macmillan</a>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="foot-left">
+            <p style="font-size:20px;">© 2022 Hogwarts School of Witchcraft and Wizardry</p>
+            </div>
+            <div class="logoname">
+                <h2 style="font-size:50px">Hogwarts</h2>
+                <h5 style="font-size:30px">School</h5>
+                <img src="https://1000logos.net/wp-content/uploads/2018/08/Hogwarts-Logo.jpg" alt="">
+            </div>
+            <div class="foot-right">
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">Youtube</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

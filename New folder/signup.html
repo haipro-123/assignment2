@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .header {
+        display:flex;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: #000;
+        box-shadow: 0 2px 5px rgb(0 0 0/16%),0 2px 5px rgb(0 0 0/12%);
+        align-items: center;
+        justify-content: center;
+    }
+    .header img {
+        width: 150px;
+    }
+    button {
+        margin-top: 5px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+    }
+    .contant {
+        margin:10px 5px 50px;
+    }
+    @media (max-width:1000px){
+        .foot {
+            flex-direction: column!important;
+        }
+        .logoname,.foot-left,.foot-right {
+            width: 100%!important;
+            justify-content: center!important;
+        }
+
+    }
+    footer {
+        background-color: #0e0e0e;
+        color: #8996a0;
+        padding-bottom: 64px;
+        padding-top: 64px;
+        position: relative;
+        z-index: 2;
+    }
+    .foot {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .logoname {
+        width: 33.33%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .logoname img {
+        max-width: 150px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .foot-right {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .foot-left {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .foot-right a {
+        padding:0 10px;
+        text-decoration: none;
+        color: #8996a0;
+        font-size: 20px;
+    }
+    .logoname img {
+        height: auto;
+    }
+</style>
+<body>
+    <div class="header">
+        <img src="https://1000logos.net/wp-content/uploads/2018/08/Hogwarts-Logo.jpg" alt="">
+    </div>
+    <div class="contant">
+        <h1>Đăng kí thông tin</h1> <hr>
+        <label for="name">Họ và tên</label> <br>
+        <input type="text" id="name"> <br>
+        <label for="social">email</label> <br>
+        <input type="text" id="social"> <br>
+        <label for="pass">Mật khẩu mới</label> <br>
+        <input type="password" id="pass"> <br>
+        <label for="date">Ngày sinh</label> <br>
+        <input type="date" id="date"> <br>
+        <label for="sex">Giới tính</label> <br>
+        <input type="radio" id="sex" name="sex"> Nam 
+        <input type="radio" id="sex" name="sex"> Nữ <br>
+        <label for="like">Sở thích</label> <br>
+        <input type="checkbox" id="like" name="like"> thể thao
+        <input type="checkbox" id="like" name="like"> du lịch
+        <input type="checkbox" id="like" name="like"> đua xe
+        <input type="checkbox" id="like" name="like"> chơi game <hr>
+        <button type="submit">Submit</button>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="foot-left">
+            <p style="font-size:20px;">© 2022 Hogwarts School of Witchcraft and Wizardry</p>
+            </div>
+            <div class="logoname">
+                <h2 style="font-size:50px">Hogwarts</h2>
+                <h5 style="font-size:30px">School</h5>
+                <img src="https://1000logos.net/wp-content/uploads/2018/08/Hogwarts-Logo.jpg" alt="">
+            </div>
+            <div class="foot-right">
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">Youtube</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

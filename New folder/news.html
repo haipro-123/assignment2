@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .header {
+        display:flex;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: #000;
+        box-shadow: 0 2px 5px rgb(0 0 0/16%),0 2px 5px rgb(0 0 0/12%);
+        align-items: center;
+        justify-content: center;
+    }
+    .header img {
+        width: 150px;
+    }
+    h1 {
+        font-variant: small-caps;
+        margin-bottom: 10px;
+    }
+    .contant {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    .contant a{
+        padding-left: 5px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .contant img {
+        float: left;
+    }
+    .p1,.p2,.p3 {
+        display: flex;
+        padding:10px 5px;
+    }
+    p {
+        color: black;
+    }
+    @media (max-width:1000px){
+        .foot {
+            flex-direction: column!important;
+        }
+        .logoname,.foot-left,.foot-right {
+            width: 100%!important;
+            justify-content: center!important;
+        }
+
+    }
+    footer {
+        background-color: #0e0e0e;
+        color: #8996a0;
+        padding-bottom: 64px;
+        padding-top: 64px;
+        position: relative;
+        z-index: 2;
+    }
+    .foot {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .logoname {
+        width: 33.33%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .logoname img {
+        max-width: 150px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .foot-right {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .foot-left {
+        width: 33.33%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .foot-right a {
+        padding:0 10px;
+        text-decoration: none;
+        color: #8996a0;
+        font-size: 20px;
+    }
+    .logoname img {
+        height: auto;
+    }
+</style>
+<body>
+    <div class="header">
+        <img src="https://1000logos.net/wp-content/uploads/2018/08/Hogwarts-Logo.jpg" alt="">
+    </div>
+    <h1>News</h1> <hr>
+    <audio src="https://x2convert.com/vi/Thankyou?token=U2FsdGVkX18v7mnAzgTbfU%2fbEsbNE9SfaYK354KUFA2drjaEZkvfWwgUfShPDKqZKFsir1JHZrUtWj4Vd23cKtf4IRAEyJDuku9iL4pTqDe4uEt2%2f%2fFkfvxK6jrTyCQq3vJ1AuxuLWxytmd%2bClG0ONY6RN42WKV0pAvvZ%2bGglWL%2fip1Ct4gYDgerSukbGVsC&s=youtube&id=&h=1789660602591356463" controls autoplay loop>
+        Rapcoustic
+    </audio>
+    <div class="contant">
+        <div class="p1">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/3/35/Hogwarts1.jpg/300px-Hogwarts1.jpg" alt="">
+            <a href=""><h3>Vị trí và phong cảnh</h3>
+            <p>Hogwarts là một tòa lâu đài huyền bí cổ xưa với bảy tầng lầu, nằm trên một vùng đất hoang sơ hùng vĩ.</p>
+            </a>
+        </div>
+        <div class="p2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/The_Great_Hall%2C_Hogwarts.jpg/300px-The_Great_Hall%2C_Hogwarts.jpg" alt="">
+            <a href=""><h3>Các nhà trong Hogwarts</h3>
+            <p>Các nhà thi đua với nhau trong suốt cả năm học, bằng cách kiếm điểm hoặc bị mất điểm bằng nhiều cách, để đạt Cúp Nhà. Mỗi nhà có đội Quidditch (môn thể thao phổ biến nhất thế giới phù thủy) riêng – cũng thi đấu với nhau để giành cúp Quidditch</p>
+            </a>
+        </div>
+        <div class="p3">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/3/3d/Harry_Potter_and_the_sorting_hat.jpg/200px-Harry_Potter_and_the_sorting_hat.jpg" alt="">
+            <a href=""><h3>Phân loại</h3>
+            <p>Vào thuở Hogwarts ban đầu, 4 nhà sáng lập đã tuyển lựa học sinh vào nhà mình rất cẩn thận. Khi họ lo lắng về cách chọn lựa sau khi họ qua đời, Godric Gryffindor đã cởi nón mình ra và đặt vào trong đó "một chút trí óc" của mỗi người, biến nó thành "Chiếc nón Phân loại".</p>
+            </a>
+        </div>
+    </div>
+    <div class="fb-like" data-href="file:///D:/LAB%20WEB/lab12.html" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+    <footer>
+        <div class="foot">
+            <div class="foot-left">
+            <p style="font-size:20px;color: #8996a0;">© 2022 Hogwarts School of Witchcraft and Wizardry</p>
+            </div>
+            <div class="logoname">
+                <h2 style="font-size:50px">Hogwarts</h2>
+                <h5 style="font-size:30px">School</h5>
+                <img src="https://1000logos.net/wp-content/uploads/2018/08/Hogwarts-Logo.jpg" alt="">
+            </div>
+            <div class="foot-right">
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">Youtube</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

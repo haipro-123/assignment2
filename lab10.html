@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    label {
+        font-weight: bold;
+        font-variant: small-caps;
+    }
+    input,textarea {
+        padding: 5px;
+        border: 1px solid gray;
+        border-radius: 3px;
+    }
+    input:focus,textarea:focus {
+        background-color: yellow;
+        box-shadow: 0 0 3px red;
+        border:1px solid yellow ;
+    }
+    .form-button {
+        padding:8px 30px ;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        background-color: white;
+        color: orangered;
+        box-shadow: inset 0 0 20px blue;
+    }
+    .form-button:hover {
+        color: blue;
+        box-shadow: inset 0 0 20px orangered;
+    }
+    .form-button:disabled {
+        color: darkgray;
+        box-shadow: inset 0 0 20px gray;
+    }
+    fieldset {
+        padding:5px 2px ;
+        max-width: 200px;
+    }
+</style>
+<body>
+    <form action="">
+    <label for="name" tabindex="1">Họ và tên:</label> <br>
+    <input type="text" id="name"> <br>
+    <label for="nat">Quốc tịch:</label> <br>
+    <input type="text" id="nat" value="Việt Nam" readonly> <br>
+    <label for="note" tabindex="2">Ghi chú:</label> <br>
+    <textarea name="" id="note" cols="30" rows="10"></textarea> <hr>
+    <button class="form-button" tabindex="3">Thêm</button>
+    <button class="form-button" tabindex="4">Sửa</button>
+    <button class="form-button" disabled>Xoá</button>
+    </form>
+    <h1>Bài 2</h1>
+    <form action="">
+        <label for="name">Họ và tên:</label> <br>
+        <input type="text" id="name"> <br>
+        <fieldset>
+            <legend>Giới tính</legend>
+            <input type="radio" name="sex" > <span>Nam</span>
+            <input type="radio" name="sex" > <span>Nữ</span>
+        </fieldset>
+        <label for="date">Ngày sinh:</label> <br>
+        <input type="date" id="date"> <br>
+        <label for="score">Điểm:</label> <br>
+        <input type="number" min="0" max="10" step="0.25"> <br>
+        <label for="job">Nghề nghiệp:</label> <br>
+        <input type="list" id="job" list="jobs"> <br>
+        <datalist id="jobs">
+            <option value="Police">Police</option>
+            <option value="doctor">Doctor</option>
+            <option value="worker">Worker</option>
+            <option value="teacher">Teacher</option>
+            <option value="developer">developer</option>
+        </datalist>
+        <fieldset style="max-width:400px">
+            <legend>Sở thích:</legend>
+            <input type="checkbox" id="likes" value="sport"> <label for="likes">Thể thao</label>
+            <input type="checkbox" id="likes" value="visit"> <label for="likes">Du lịch</label>
+            <input type="checkbox" id="likes" value="music"> <label for="likes">Âm nhạc</label>
+            <input type="checkbox" id="likes" value="food"> <label for="likes">Ẩm thực</label>
+        </fieldset>
+        <label for="note">Ghi chú:</label> <br>
+        <textarea name="" id="note" cols="30" rows="10"></textarea> <hr>
+        <button class="form-button">Đăng ký</button>
+        <button class="form-button">Nhập lại</button>
+    </form>
+</body>
+</html>
